@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup & Signin Forms</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f4f4f4;
+      }
+      .form-container {
+        display: flex;
+        gap: 20px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      table {
+        border-collapse: collapse;
+        width: 300px;
+      }
+      td {
+        padding: 10px;
+        vertical-align: middle;
+      }
+      td:first-child {
+        text-align: right;
+        font-weight: bold;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      form {
+        border: 1px slateblue solid;
+        padding: 50px;
+      }
+      button {
+        background-color: slateblue;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      h2 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <!-- Signup Form -->
+      <form>
+        <h2>Signup</h2>
+        <table>
+          <tr>
+            <td><label for="signup-name">Name:</label></td>
+            <td><input type="text" id="signup-name" name="name" required /></td>
+          </tr>
+          <tr>
+            <td><label for="signup-email">Email:</label></td>
+            <td>
+              <input type="email" id="signup-email" name="email" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="signup-password">Password:</label></td>
+            <td>
+              <input
+                type="password"
+                id="signup-password"
+                name="password"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button type="submit">Sign Up</button></td>
+          </tr>
+        </table>
+      </form>
+
+      <!-- Signin Form -->
+      <form>
+        <h2>Signin</h2>
+        <table>
+          <tr>
+            <td><label for="signin-email">Email:</label></td>
+            <td>
+              <input type="email" id="signin-email" name="email" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="signin-password">Password:</label></td>
+            <td>
+              <input
+                type="password"
+                id="signin-password"
+                name="password"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button type="submit">Sign In</button></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    nav{
+        background-color: rgb(99, 53, 0);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        padding: 10px 50px;
+
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+            gap: 20px;
+
+            li{
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 760px) {
+
+        nav{
+            flex-direction: column;
+            row-gap: 20px;
+        }
+        
+    }
+</style>
+<body>
+    <nav>
+        <h1>Logo</h1>
+        <ul>
+            <li> <a href="#"> Home  </a></li>
+            <li> <a href="#"> About  </a></li>
+            <li> <a href="#"> Services  </a></li>
+            <li> <a href="#"> Contect US  </a></li>
+            <li> <select name="mode" id="mode"> 
+                <option value="light" selected disabled>Select Mode</option>
+                <option value="light">Light Mode</option>
+                <option value="Dark">Dark mode</option>
+            </select> </li>
+        </ul>
+    </nav>
+</body>
+</html>
