@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excercise 10</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      iframe {
+        border: 1px solid black;
+      }
+      .main-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 50px;
+      }
+      .link-container{
+        display: flex;
+        flex-direction: column;
+        
+        a{
+            margin-bottom: 20px;
+            color: black;
+            text-decoration: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main-container">
+
+      <div class="link-container">
+        <a
+          href="https://dps-broken.github.io/ActionPlan/"
+          target="myIframe"
+          >To DO list</a
+        >
+        <a
+          href="https://dps-broken.github.io/Tic-Tac-Toe-Game/"
+          target="myIframe"
+          >Tic-Tac-Toe-Game</a
+        >
+        <a href="https://dps-broken.github.io/portfolio/" target="myIframe"> Portfolio</a>
+      </div>
+
+      <iframe frameborder="0" height="600" width="800" name="myIframe"></iframe>
+    </div>
+  </body>
+</html>

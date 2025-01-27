@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      .header {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #f0f0f0;
+        padding: 20px;
+      }
+
+      .card {
+        flex: 1 1 30%;
+        background-color: white;
+        margin: 10px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        min-width: 250px;
+      }
+
+      .card h2 {
+        margin-bottom: 10px;
+      }
+
+      .card p {
+        font-size: 14px;
+      }
+
+      @media (max-width: 768px) {
+        .card {
+          flex: 1 1 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1>lorem ipsum</h1>
+      <p>Resize the page to see the responsiveness!</p>
+    </header>
+    <main class="content">
+      <div class="card">
+        <h2>lorem</h2>
+        <p>
+          London is the capital city of England. It is the most populous city in
+          the United Kingdom, with a metropolitan area of over 13 million
+          inhabitants.
+        </p>
+      </div>
+      <div class="card">
+        <h2>lorem</h2>
+        <p>
+          Paris is the capital of France. The Paris area is one of the largest
+          population centers in Europe, with more than 12 million inhabitants.
+        </p>
+      </div>
+      <div class="card">
+        <h2>lorem</h2>
+        <p>
+          Tokyo is the capital of Japan. It is the center of the Greater Tokyo
+          Area, and the most populous metropolitan area in the world.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
